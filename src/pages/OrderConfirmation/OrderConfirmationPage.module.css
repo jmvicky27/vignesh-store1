@@ -1,0 +1,111 @@
+.confirmContainer {
+  max-width: 680px;
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+  padding-block: var(--space-20);
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--ink-hairline);
+  border-radius: var(--radius-xl);
+  padding: var(--space-12) var(--space-8);
+  text-align: center;
+  box-shadow: var(--shadow-lg);
+}
+
+.iconRing {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: var(--success-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-inline: auto;
+  margin-bottom: var(--space-6);
+}
+
+.checkIcon {
+  color: var(--success);
+}
+
+.pretitle {
+  font-size: var(--text-xs);
+  color: var(--terracotta);
+  font-weight: 700;
+  letter-spacing: var(--tracking-widest);
+}
+
+.title {
+  font-family: var(--font-serif);
+  font-size: clamp(2rem, 3.5vw, 2.75rem);
+  color: var(--ink);
+  margin-top: 4px;
+  margin-bottom: var(--space-3);
+}
+
+.subtitle {
+  font-size: var(--text-base);
+  color: var(--ink-muted);
+  line-height: var(--leading-relaxed);
+  max-width: 480px;
+  margin-inline: auto;
+  margin-bottom: var(--space-8);
+}
+
+.detailsBox {
+  background: var(--canvas-alt);
+  border: 1px solid var(--ink-hairline);
+  border-radius: var(--radius-md);
+  padding: var(--space-6);
+  margin-bottom: var(--space-8);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.detailRow {
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--text-sm);
+  color: var(--ink-secondary);
+}
+
+.detailRow strong {
+  color: var(--ink);
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+}
+
+.trackBtn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  background: var(--accent);
+  color: var(--accent-on);
+  border-radius: var(--radius-pill);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.shopBtn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  background: transparent;
+  color: var(--ink);
+  border: 1px solid var(--ink-hairline);
+  border-radius: var(--radius-pill);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  text-decoration: none;
+}

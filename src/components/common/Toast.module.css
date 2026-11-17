@@ -1,0 +1,76 @@
+.toast {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: var(--z-toast);
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: 12px 18px;
+  border-radius: var(--radius-md);
+  background: var(--surface-dark);
+  color: var(--ink-on-dark);
+  box-shadow: var(--shadow-xl);
+  font-size: var(--text-sm);
+  max-width: 380px;
+  animation: slideIn 0.3s var(--ease-spring);
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.success {
+  border-left: 4px solid var(--success);
+}
+.success .icon {
+  color: var(--success);
+}
+
+.error {
+  border-left: 4px solid var(--danger);
+}
+.error .icon {
+  color: var(--danger);
+}
+
+.info {
+  border-left: 4px solid var(--accent-light);
+}
+.info .icon {
+  color: #79a8e0;
+}
+
+.warning {
+  border-left: 4px solid var(--warning);
+}
+.warning .icon {
+  color: var(--warning);
+}
+
+.message {
+  flex: 1;
+  line-height: var(--leading-snug);
+}
+
+.closeBtn {
+  color: var(--ink-faint);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 2px;
+  border-radius: 4px;
+}
+
+.closeBtn:hover {
+  color: var(--ink-on-dark);
+}

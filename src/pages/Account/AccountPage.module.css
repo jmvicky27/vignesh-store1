@@ -1,0 +1,279 @@
+.accountContainer {
+  max-width: var(--max-width);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+  padding-block: var(--space-10) var(--space-20);
+}
+
+.userBanner {
+  background: var(--surface);
+  border: 1px solid var(--ink-hairline);
+  border-radius: var(--radius-xl);
+  padding: var(--space-8);
+  display: flex;
+  align-items: center;
+  gap: var(--space-6);
+  margin-bottom: var(--space-10);
+  box-shadow: var(--shadow-sm);
+  flex-wrap: wrap;
+}
+
+.avatarWrap {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid var(--accent);
+}
+
+.avatar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bannerInfo {
+  flex: 1;
+}
+
+.clientRole {
+  font-size: var(--text-xs);
+  color: var(--terracotta);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-wider);
+}
+
+.clientName {
+  font-family: var(--font-serif);
+  font-size: var(--text-3xl);
+  color: var(--ink);
+  margin-top: 2px;
+}
+
+.clientEmail {
+  font-size: var(--text-sm);
+  color: var(--ink-muted);
+}
+
+.logoutBtn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  border: 1px solid var(--ink-hairline);
+  background: var(--canvas-alt);
+  color: var(--ink-secondary);
+  border-radius: var(--radius-pill);
+  font-size: var(--text-xs);
+  cursor: pointer;
+  transition: all var(--duration-fast);
+}
+
+.logoutBtn:hover {
+  background: var(--danger-light);
+  color: var(--danger);
+  border-color: var(--danger);
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: var(--space-8);
+  align-items: start;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.navItem {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: 12px 16px;
+  border-radius: var(--radius-md);
+  background: var(--surface);
+  border: 1px solid var(--ink-hairline);
+  color: var(--ink-secondary);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  cursor: pointer;
+  text-align: left;
+  transition: all var(--duration-fast);
+}
+
+.navItem:hover {
+  background: var(--canvas-alt);
+  color: var(--ink);
+}
+
+.activeNav {
+  background: var(--accent);
+  color: var(--accent-on);
+  border-color: var(--accent);
+}
+
+.activeNav:hover {
+  background: var(--accent-hover);
+  color: var(--accent-on);
+}
+
+.adminNavLink {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: 12px 16px;
+  border-radius: var(--radius-md);
+  background: var(--surface-dark);
+  color: var(--ink-on-dark);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  text-decoration: none;
+  margin-top: var(--space-4);
+}
+
+.contentPane {
+  background: var(--surface);
+  border: 1px solid var(--ink-hairline);
+  border-radius: var(--radius-lg);
+  padding: var(--space-8);
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-6);
+  padding-bottom: var(--space-4);
+  border-bottom: 1px solid var(--ink-hairline);
+}
+
+.cardTitle {
+  font-family: var(--font-serif);
+  font-size: var(--text-2xl);
+  color: var(--ink);
+}
+
+.editToggleBtn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: var(--text-xs);
+  color: var(--accent);
+  background: none;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.detailsView {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-6);
+}
+
+.detailItem span {
+  display: block;
+  font-size: var(--text-xs);
+  color: var(--ink-faint);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 4px;
+}
+
+.detailItem strong {
+  font-size: var(--text-base);
+  color: var(--ink);
+}
+
+.editForm {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.formGroup label {
+  font-size: var(--text-xs);
+  color: var(--ink-secondary);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.formGroup input, .formGroup textarea {
+  padding: 10px 14px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--ink-hairline);
+  background: var(--canvas);
+  font-size: var(--text-sm);
+}
+
+.saveBtn {
+  align-self: flex-start;
+  padding: 10px 24px;
+  background: var(--accent);
+  color: var(--accent-on);
+  border-radius: var(--radius-pill);
+  font-size: var(--text-xs);
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+
+.orderMiniCard {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--space-4) 0;
+  border-bottom: 1px solid var(--ink-hairline);
+  font-size: var(--text-sm);
+}
+
+.miniTrackLink {
+  margin-left: 12px;
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.wishlistList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.wishlistMiniItem {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  padding-bottom: var(--space-4);
+  border-bottom: 1px solid var(--ink-hairline);
+}
+
+.wishlistMiniItem img {
+  width: 50px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+}
+
+.viewPieceLink {
+  margin-left: auto;
+  font-size: var(--text-xs);
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+}

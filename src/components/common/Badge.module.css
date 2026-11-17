@@ -1,0 +1,58 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--font-sans);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  border-radius: 100px;
+  white-space: nowrap;
+  line-height: 1;
+}
+
+/* Sizes */
+.sm {
+  font-size: 10px;
+  padding: 3px 8px;
+}
+
+.md {
+  font-size: 12px;
+  padding: 4px 10px;
+}
+
+.lg {
+  font-size: 13px;
+  padding: 6px 14px;
+}
+
+/* Variants */
+.terracotta {
+  background-color: var(--terracotta, #B5703A);
+  color: #ffffff;
+}
+
+.navy {
+  background-color: var(--accent, #1C3A5E);
+  color: #ffffff;
+}
+
+.success {
+  background-color: #16A34A;
+  color: #ffffff;
+}
+
+.warning {
+  background-color: #D97706;
+  color: #ffffff;
+}
+
+.danger {
+  background-color: #DC2626;
+  color: #ffffff;
+}
+
+.gold {
+  background-color: #B45309;
+  color: #ffffff;
+}

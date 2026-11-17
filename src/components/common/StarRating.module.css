@@ -1,0 +1,71 @@
+.wrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.stars {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.starWrapper {
+  position: relative;
+  display: inline-block;
+  line-height: 0;
+}
+
+.starBase,
+.starFill {
+  display: block;
+}
+
+.starFill {
+  position: absolute;
+  inset: 0;
+}
+
+/* Sizes */
+.sm .starBase,
+.sm .starFill {
+  width: 14px;
+  height: 14px;
+}
+
+.md .starBase,
+.md .starFill {
+  width: 18px;
+  height: 18px;
+}
+
+.lg .starBase,
+.lg .starFill {
+  width: 22px;
+  height: 22px;
+}
+
+.meta {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 4px;
+}
+
+.ratingNum {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ink);
+  font-family: var(--font-sans);
+}
+
+.count {
+  font-size: 12px;
+  color: var(--ink-muted);
+  font-family: var(--font-sans);
+}
+
+.sm .ratingNum { font-size: 12px; }
+.sm .count { font-size: 11px; }
+
+.lg .ratingNum { font-size: 15px; }
+.lg .count { font-size: 14px; }

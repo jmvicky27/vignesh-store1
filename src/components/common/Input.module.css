@@ -1,0 +1,89 @@
+.fieldWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+}
+
+.label {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ink, #1A1A1A);
+  letter-spacing: 0.01em;
+}
+
+.inputWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input {
+  width: 100%;
+  font-family: var(--font-sans);
+  font-size: 14px;
+  color: var(--ink, #1A1A1A);
+  background-color: #ffffff;
+  border: 1px solid var(--ink-hairline, #E0DDD8);
+  border-radius: 6px;
+  padding: 10px 14px;
+  outline: none;
+  transition: border-color 180ms ease, background-color 180ms ease, box-shadow 180ms ease;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.input::placeholder {
+  color: var(--ink-muted, #9B9690);
+}
+
+.input:focus {
+  border-color: var(--accent, #1C3A5E);
+  background-color: rgba(28, 58, 94, 0.025);
+  box-shadow: 0 0 0 3px rgba(28, 58, 94, 0.08);
+}
+
+.input.withIcon {
+  padding-left: 40px;
+}
+
+.iconLeft {
+  position: absolute;
+  left: 12px;
+  color: var(--ink-muted, #9B9690);
+  display: inline-flex;
+  align-items: center;
+  pointer-events: none;
+  transition: color 180ms ease;
+}
+
+.inputWrapper:focus-within .iconLeft {
+  color: var(--accent, #1C3A5E);
+}
+
+/* Error state */
+.hasError .input {
+  border-color: #DC2626;
+  background-color: rgba(220, 38, 38, 0.02);
+}
+
+.hasError .input:focus {
+  border-color: #DC2626;
+  box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.1);
+}
+
+.errorMsg {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  color: #DC2626;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.hint {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  color: var(--ink-muted, #9B9690);
+}
